@@ -23,12 +23,11 @@ if "page" not in st.session_state:
     st.session_state["page"] = "home"
 
 
-
 if st.session_state["page"] == "home":
     st.sidebar.title("Menu")
     paginas = st.sidebar.selectbox(
         "Select a page",
-        ["Home", "Container", "Freight"],
+        ["Home", "Freight", "Container"],
     )
     if paginas == "Home":
         home_page()
